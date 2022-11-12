@@ -140,30 +140,23 @@ a {
 .mess-container {
   display: flex;
   gap: 50px;
+  align-items: baseline;
 }
-
-.mail-container,
-.tel-container {
+.mess-link {
   display: flex;
-  gap: 10px;
   align-items: baseline;
 }
 
 .mess-icon {
   fill: var(--primery-text-color);
+  margin-right: 10px;
 }
-.mail-container:hover .mess-icon,
-.mail-container:focus .mess-icon {
+
+.mess-link:hover .mess-icon,
+.mess-link:focus .mess-icon {
   fill: var(--bg-color);
 }
-.tel-container:hover .mess-icon,
-.tel-container:focus .mess-icon {
-  fill: var(--bg-color);
-}
-.mess-icon:hover,
-.mess-icon:focus {
-  fill: var(--bg-color);
-}
+
 /* ---------------------------- Hero   -----------------------              */
 .hero-wrap {
   display: flex;
@@ -455,7 +448,7 @@ a {
 }
 .soc-list {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   min-width: 170px;
 }
 
@@ -523,9 +516,11 @@ a {
   max-width: 370px;
   flex-basis: calc((100%-60px) / 3);
 }
-
-.portfolio-card:hover,
-.portfolio-card:focus {
+.portfolio-card-link {
+  display: block;
+}
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
